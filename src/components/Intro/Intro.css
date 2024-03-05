@@ -1,0 +1,57 @@
+.intro-container{
+    margin-top: 10vh;
+    height: 80vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    position: relative;
+}
+
+
+.text-container{
+    padding: 70px;
+    border-radius: 20px;
+    width: 90%;
+    z-index: 2;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.347);
+}
+
+
+.text-container h1{
+    font-size: 2.67rem;
+}
+.text-container h2{
+    color: rgb(224, 224, 224);
+    font-size: 2rem;
+}
+
+.wave-container{
+    z-index: 1;
+}
+
+#canvas{
+    height: 80vh !important;
+    width: 100vw !important;
+}
+
+.stackable{
+    position: absolute;
+}
+
+.arrow-container{
+    z-index: 3;
+    right: 0;
+    bottom: 0;
+}
+
+.arrow-container img{
+    width: 60px;
+}
+
+
+
+
+

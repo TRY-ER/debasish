@@ -1,0 +1,34 @@
+@import "../../master.css";
+
+.base-home-container{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    background-image: var(--main-back-gradient);
+    color: white;
+    font-family: var(--primary-font);
+    overflow-x: hidden;
+    padding: 2vh 15vw;
+}
+
+.home-header-container{
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+
+.media-container{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}

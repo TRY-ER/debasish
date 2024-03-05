@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Righteous&family=Silkscreen:wght@400;700&display=swap');
+
+:root {
+    --primary-background: rgb(5, 0, 22);
+    --primary-font: "Righteous", sans-serif;
+    --main-back-gradient: linear-gradient(315deg,
+            hsl(254deg 100% 4%) 0%,
+            hsl(253deg 91% 4%) 21%,
+            hsl(253deg 82% 4%) 30%,
+            hsl(253deg 72% 4%) 39%,
+            hsl(253deg 62% 4%) 46%,
+            hsl(252deg 52% 4%) 54%,
+            hsl(252deg 41% 4%) 61%,
+            hsl(252deg 29% 4%) 69%,
+            hsl(251deg 15% 4%) 79%,
+            hsl(0deg 0% 4%) 100%);
+}
