@@ -3,6 +3,8 @@ import "./Intro.css";
 import { motion } from "framer-motion";
 import { WavyBackground } from "../ui/wavy-background.tsx";
 
+import { introSub, introTitle } from "../../content/introContent.jsx";
+
 
 const IntroSection = () => {
     const headTextAppearVar = {
@@ -16,11 +18,10 @@ const IntroSection = () => {
             opacity: 1,
             filter: "blur(0px)",
             transition: {
-                delay: 1,
                 duration: 0.5,
                 ease: "easeInOut"
             }
-        }
+        },
     }
 
     const downArrowAppearVar = {
@@ -34,7 +35,6 @@ const IntroSection = () => {
             opacity: 1,
             filter: "blur(0px)",
             transition: {
-                delay: 2,
                 duration: 0.5,
                 ease: "easeInOut"
             }
@@ -52,18 +52,18 @@ const IntroSection = () => {
             <div className="text-container stackable">
                 <motion.h1
                     variants={headTextAppearVar}
-                    animate="animate"
+                    whileInView="animate"
                     initial="initial"
-                >Hi, I am DEBASISH </motion.h1>
+                >{introTitle}</motion.h1>
                 <motion.h2
                     variants={headTextAppearVar}
-                    animate="animate"
+                    whileInView="animate"
                     initial="initial"
-                >Weaving worlds through code and creativity. Focusing on <strong>Machine Learning</strong>, <strong>Polymer Research</strong>, and <strong>Generative AI</strong>.</motion.h2>
+                >{introSub}</motion.h2>
             </div>
             <motion.div
                 variants={downArrowAppearVar}
-                animate="animate"
+                whileInView="animate"
                 initial="initial"
                 className="arrow-container stackable">
                 <img src="/assets/icons/downarrow-white.svg" alt="" />

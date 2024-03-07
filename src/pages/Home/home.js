@@ -50,7 +50,7 @@ const HomePage = () => {
                     </>
                 }
             </AnimatePresence>
-                <BaseHomeComp isLoaded={isLoaded} />
+            <BaseHomeComp isLoaded={isLoaded} />
         </>
 
     )

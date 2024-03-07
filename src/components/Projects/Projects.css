@@ -1,16 +1,9 @@
 
-.projects-main-container{
-    height: auto;
-}
-
 .projects-main-container .heading-container{
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: flex-start;
     font-size: 2.67rem;    
-}
-
-.projects-main-container .heading-container h1{
-    width: 45px;
+    z-index: 1;
 }

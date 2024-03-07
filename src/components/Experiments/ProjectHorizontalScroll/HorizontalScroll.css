@@ -1,0 +1,13 @@
+/* .sticky-container{
+    height: 500vh !important;
+} */
+
+.sticky-ref{
+    min-height: 300vh;
+}
+
+
+.sticky-content{
+    position: -webkit-sticky;
+    position: sticky;
+}

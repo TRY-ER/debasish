@@ -8,6 +8,8 @@ import React, {
   useRef,
   useEffect,
 } from "react";
+import "./3D-card.css";
+import { motion } from "framer-motion";
 
 const MouseEnterContext = createContext<
   [boolean, React.Dispatch<React.SetStateAction<boolean>>] | undefined
@@ -17,13 +19,17 @@ export const CardContainer = ({
   children,
   className,
   containerClassName,
+  index
 }: {
   children?: React.ReactNode;
   className?: string;
   containerClassName?: string;
+  index: number;
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isMouseEntered, setIsMouseEntered] = useState(false);
+
+
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!containerRef.current) return;
@@ -46,9 +52,9 @@ export const CardContainer = ({
   };
   return (
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
-      <div
+      <motion.div
         className={cn(
-          "py-20 flex items-center justify-center",
+          "py-20 flex items-center justify-center card-container",
           containerClassName
         )}
         style={{
@@ -61,7 +67,7 @@ export const CardContainer = ({
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
           className={cn(
-            "flex items-center justify-center relative transition-all duration-200 ease-linear",
+            "flex items-center justify-center relative transition-all duration-200 ease-linear card-indiv",
             className
           )}
           style={{
@@ -70,7 +76,7 @@ export const CardContainer = ({
         >
           {children}
         </div>
-      </div>
+      </motion.div>
     </MouseEnterContext.Provider>
   );
 };
@@ -78,19 +84,43 @@ export const CardContainer = ({
 export const CardBody = ({
   children,
   className,
+  index
 }: {
   children: React.ReactNode;
   className?: string;
+  index?: number;
 }) => {
+  const elemVariant = {
+    initial: {
+      y: "10%",
+      opacity: 0,
+      filter: "blur(5px)",
+    },
+    whileInView: (index: number) => {
+      return {
+        y: 0,
+        opacity: 1,
+        filter: "blur(0px)",
+        transition: {
+          duration: 0.3,
+          ease: "easeInOut"
+        }
+      }
+    }
+  }
   return (
-    <div
+    <motion.div
+      variants={elemVariant}
+      initial="initial"
+      whileInView="whileInView"
+      custom={index}
       className={cn(
         "threeD-card-body [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
         className
       )}
     >
       {children}
-    </div>
+    </motion.div>
   );
 };
 
