@@ -1,10 +1,12 @@
+import { dummyContent } from "./indivProject/sampleDetail"
+
 const projectContent = [ 
     {
         id: "PSC-regressor",
         title: "PSC PCE Regressor",
         desc: "ML/DL Based Regression Mechanism for Power Converstion Efficiency of Perovskite Solar cells",
         img: "/assets/images/project_images/publication_img.png",
-        steps: []
+        steps: dummyContent 
     },
     {
         id: "stability",

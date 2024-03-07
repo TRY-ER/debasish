@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./ProjectIndiv.css";
+import "./ExpIndiv.css";
 import Example from "../../components/ui/horizontalScroll/HorizontalScroll.js";
 import IntroSection from "../../components/Intro/Intro.jsx";
 import ProjectSection from "../../components/Projects/Projects.jsx";
@@ -15,14 +15,14 @@ import ProjectOutro from "../../components/ProjectOutro/ProjectOutro.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
 import { TracingBeamDemo } from "../../components/IndivProject/IndivProjectContainer.jsx";
 import { useParams } from "react-router-dom";
-import { projectContent } from "../../content/projectContent.jsx";
+import { experimentContent } from "../../content/experimentContent.jsx";
 
-const ProjectIndivComp = () => {
+const ExpIndivComp= () => {
     const { scrollYProgress } = useScroll();
     const [projObj, setProjObj] = useState({});
-    const projId = useParams()["project-id"];
+    const projId = useParams()["exp-id"];
     useEffect(() => {
-        setProjObj(projectContent.find(item => item.id === projId));
+        setProjObj(experimentContent.find(item => item.id === projId));
     })
 
     useEffect(() => {
@@ -100,4 +100,4 @@ const ProjectIndivComp = () => {
 
 }
 
-export default ProjectIndivComp;
+export default ExpIndivComp;

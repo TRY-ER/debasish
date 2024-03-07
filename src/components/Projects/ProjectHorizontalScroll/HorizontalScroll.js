@@ -5,6 +5,7 @@ import { useRef } from "react";
 
 import { CardBody, CardContainer, CardItem } from "../../ui/3D-card.tsx";
 import { projectContent } from "../../../content/projectContent.jsx";
+import { Link } from "react-router-dom";
 
 const Example = () => {
     return (
@@ -53,6 +54,7 @@ const HorizontalScrollCarousel = () => {
                                     />
                                 </CardItem>
                                 <div className="flex justify-between items-center mt-20">
+                                    <Link to={`/project-indiv/${item.id}`}>
                                     <CardItem
                                         translateZ={20}
                                         as="button"
@@ -60,6 +62,7 @@ const HorizontalScrollCarousel = () => {
                                     >
                                         View Details →
                                     </CardItem>
+                                    </Link>
                                 </div>
                             </CardBody>
                         </CardContainer>)

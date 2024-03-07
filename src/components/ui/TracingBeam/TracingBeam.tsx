@@ -8,13 +8,16 @@ import {
   useSpring,
 } from "framer-motion";
 import { cn } from "../../../utils/cn.ts";
+import "./TracingBeam.css";
 
 export const TracingBeam = ({
   children,
   className,
+  content,
 }: {
   children: React.ReactNode;
   className?: string;
+  content?: any;
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -31,8 +34,30 @@ export const TracingBeam = ({
     }
   }, []);
 
+  // useEffect(() => {
+  //   if (contentRef.current && "id" in content) {
+  //     setSvgHeight(contentRef.current.offsetHeight);
+  //   }
+  // }, [content])
+
+  useEffect(() => {
+    const handleHeightChange = async () => {
+      if (contentRef.current && "id" in content) {
+        // Delay using a combination of setTimeout and await
+        await new Promise(resolve => setTimeout(resolve, 200)); // Adjust delay as needed
+
+        // Update SVG height after the delay
+        setSvgHeight(contentRef.current.offsetHeight);
+      }
+    };
+    handleHeightChange();
+
+  }, [content]);
+
+
+
   const y1 = useSpring(
-    useTransform(scrollYProgress, [0, 0.8], [50, svgHeight]),
+    useTransform(scrollYProgress, [0, 0.5], [50, svgHeight]),
     {
       stiffness: 500,
       damping: 90,
@@ -49,7 +74,7 @@ export const TracingBeam = ({
   return (
     <motion.div
       ref={ref}
-      className={cn("relative w-full max-w-4xl mx-auto h-full", className)}
+      className={cn("relative w-full max-w-4xl mx-auto h-full trace-container", className)}
     >
       <div className="absolute -left-4 md:-left-20 top-3">
         <motion.div
@@ -71,8 +96,7 @@ export const TracingBeam = ({
               delay: 0.5,
             }}
             animate={{
-              backgroundColor:
-                scrollYProgress.get() > 0 ? "white" : "green",
+              backgroundColor: "green",
               borderColor:
                 scrollYProgress.get() > 0 ? "white" : "green",
             }}

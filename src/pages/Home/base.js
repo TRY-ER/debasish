@@ -15,7 +15,7 @@ import ProjectOutro from "../../components/ProjectOutro/ProjectOutro.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
 
 
-const BaseHomeComp = ({ isLoaded }) => {
+const BaseHomeComp = () => {
     const { scrollYProgress } = useScroll();
 
     useEffect(() => {
@@ -50,7 +50,6 @@ const BaseHomeComp = ({ isLoaded }) => {
     }
     return (
         <>
-            {isLoaded && (
                 <motion.div
                     className="base-home-container"
                     // variants={revealHead}
@@ -104,7 +103,6 @@ const BaseHomeComp = ({ isLoaded }) => {
                         <Footer />
                     </>
                 </motion.div>
-            )}
         </>
     );
 
