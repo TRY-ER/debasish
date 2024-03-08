@@ -22,7 +22,7 @@
 
 
 
-.home-header-container {
+.exp-header-container {
     position: fixed;
     z-index: 100;
     display: flex;
@@ -70,4 +70,60 @@ circle {
 
 #progress .indicator {
     stroke: white;
+}
+
+.profile-logo-mob {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .exp-header-container {
+        flex-direction: column !important;
+        height: auto !important;
+        max-width: 90vw;
+        width: auto !important;
+        align-items: start !important;
+        transition: height 0.2s ease;
+    }
+
+    .indiv-media {
+        display: none;
+    }
+
+    .indiv-media.show {
+        display: flex;
+    }
+
+    .email-id {
+        display: none;
+    }
+
+    .email-id.show {
+        display: flex;
+    }
+
+    .media-container.show {
+        margin-top: 10px;
+        flex-direction: column !important;
+        width: auto !important;
+        align-items: start;
+    }
+
+    .profile-logo-mob {
+        display: flex !important;
+        width: 40px !important;
+    }
+
+    .profile-logo {
+        display: none;
+    }
+
+    .email-id {
+        margin-top: 10px;
+    }
+
+    #progress .indicator {
+        stroke: white;
+        opacity: 0.3;
+    }
 }

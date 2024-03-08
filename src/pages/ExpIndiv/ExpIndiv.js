@@ -16,9 +16,11 @@ import Footer from "../../components/Footer/Footer.jsx";
 import { TracingBeamDemo } from "../../components/IndivProject/IndivProjectContainer.jsx";
 import { useParams } from "react-router-dom";
 import { experimentContent } from "../../content/experimentContent.jsx";
+import { Link } from "react-router-dom";
 
-const ExpIndivComp= () => {
+const ExpIndivComp = () => {
     const { scrollYProgress } = useScroll();
+    const [ showMobile, setShowMobile ] = useState(false);
     const [projObj, setProjObj] = useState({});
     const projId = useParams()["exp-id"];
     useEffect(() => {
@@ -68,28 +70,37 @@ const ExpIndivComp= () => {
                             style={{ pathLength: scrollYProgress }}
                         />
                     </motion.svg>
-                    <div className="home-header-container">
+                    <div className="exp-header-container">
                         <motion.h1
                             variants={headTextAppearVar}
                             animate="animate"
                             initial="initial"
-                        > Debasish's Site</motion.h1>
-                        <div className="media-container">
+                        >
+                            <Link to="/" >
+                                <img src="/assets/icons/profile_logo.png" className="profile-logo" />
+                            </Link>
+                            <img src="/assets/icons/profile_logo.png" className="profile-logo-mob" onClick={() => { setShowMobile(!showMobile) }} />
+                        </motion.h1>
+                        <div className={`media-container ${showMobile ? "show" : ""}`}>
                             {Media.map((item, index) => {
                                 {/* <FollowerPointerCard> */ }
-                                return (<motion.h1
+                                return (<a href={item.link} target="_blank"><motion.h1
                                     variants={headTextAppearVar}
                                     animate="animate"
                                     initial="initial"
-                                >{item.Title}</motion.h1 >)
+                                    className={`indiv-media ${showMobile ? "show" : ""}`}
+                                >{item.Title}</motion.h1 ></a>)
                                 {/* </FollowerPointerCard> */ }
                             })}
                         </div>
+                        <a href="mailto:availdebasish@gmail.com" target="_blank">
                         <motion.h1
                             variants={headTextAppearVar}
                             animate="animate"
                             initial="initial"
+                            className={`email-id ${showMobile ? "show" : ""}`}
                         > availdebasish@gmail.com</motion.h1>
+                        </a>
                     </div>
                     <TracingBeamDemo content={projObj} />
                     <Footer />

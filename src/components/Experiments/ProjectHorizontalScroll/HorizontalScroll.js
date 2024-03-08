@@ -54,7 +54,7 @@ const HorizontalScrollCarousel = () => {
                                             alt="thumbnail"
                                         />
                                     </CardItem>
-                                    <div className="flex justify-between items-center mt-20">
+                                    <div className="flex justify-between items-center mt-20 explore-sec">
                                         <Link to={`exp-indiv/${item.id}`}>
                                             <CardItem
                                                 translateZ={20}

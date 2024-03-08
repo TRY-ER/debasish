@@ -22,14 +22,14 @@ const experimentContent = [
     {
         id: "NPK-Reader",
         title: "ML Integrated Soil Testing and Prediction",
-        desc: "Developed the RESTAPI Backend for ML model prediction for crops and fertilizers with chemial and physical parameter input from embedded device.",
+        desc: "Developed the RESTAPI Backend for ML Model Prediction for Crops and Fertilizers with Chemical and Physical Parameter Input from Embedded Device.",
         img: "/assets/images/experiment_images/soil_testing.jpeg",
         steps: SoilTestSteps 
     },
     {
         id: "wix-database-connector",
         title: "WIX Database Python Connector",
-        desc: "This is a python library for abstraction over wix-data RESTAPI for easier data access without explicit setup for wix-developer API",
+        desc: "This is a Python Library for Abstraction Over Wix-Data RESTAPI for Easier Data Access without Explicit Setup for Wix-Developer API",
         img: "/assets/images/experiment_images/wix-data.webp",
         steps: WixConSteps 
     },

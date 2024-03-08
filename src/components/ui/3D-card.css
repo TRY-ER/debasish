@@ -5,3 +5,9 @@
 .card-indiv{
     width: 25rem;
 }
+
+@media (max-width: 700px){
+    .card-container{
+        width: 75vw;
+    }
+}

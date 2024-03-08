@@ -42,7 +42,7 @@ const HorizontalScrollCarousel = () => {
         target: targetRef,
     });
 
-    const x = useTransform(scrollYProgress, [0, 1], ["1%", "-35%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
 
     return (
         <section ref={targetRef} className="realtive exp-sticky-container">
@@ -62,7 +62,7 @@ const HorizontalScrollCarousel = () => {
                                         title={item.url}
                                         href={item.url}
                                     >
-                                        <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
+                                        <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] pin-card-obj">
                                             <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
                                                 {item.title}
                                             </h3>
