@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router basename="/debasish">
         <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/project-indiv/:project-id" element={<ProjectIndivComp/>} />
