@@ -5,11 +5,9 @@ import IntroSection from "../../components/Intro/Intro";
 import ProjectSection from "../../components/Projects/Projects";
 import ExperimentSection from "../../components/Experiments/Experiments";
 import ExperienceSection from "../../components/Experience/Experience.jsx";
-import { FollowerPointerCard } from "../../components/ui/FollowingPointer/FollowingPointer.tsx";
 
 import { Media } from "../../content/socialMedia.jsx";
 
-import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import ProjectOutro from "../../components/ProjectOutro/ProjectOutro.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
@@ -81,9 +79,9 @@ const BaseHomeComp = () => {
                             initial="initial"
                         >
                             <Link to="/" >
-                                <img src="/assets/icons/profile_logo.png" className="profile-logo" />
+                                <img src="./assets/icons/profile_logo.png" className="profile-logo" />
                             </Link>
-                            <img src="/assets/icons/profile_logo.png" className="profile-logo-mob" onClick={() => { setShowMobile(!showMobile) }} />
+                            <img src="./assets/icons/profile_logo.png" className="profile-logo-mob" onClick={() => { setShowMobile(!showMobile) }} />
                         </motion.h1>
                         <div className={`media-container ${showMobile ? "show" : ""}`}>
                             {Media.map((item, index) => {

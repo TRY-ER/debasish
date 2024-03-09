@@ -66,7 +66,7 @@ const IntroSection = () => {
                 whileInView="animate"
                 initial="initial"
                 className="arrow-container stackable">
-                <img src="/assets/icons/downarrow-white.svg" alt="" />
+                <img src="./assets/icons/downarrow-white.svg" alt="" />
             </motion.div>
         </div>
     </>)

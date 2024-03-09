@@ -14,7 +14,7 @@ const PSCContent = [
     ),
     badge: "Intro",
     image:
-      "/assets/images/project_images/publication_img.png",
+      "https://try-er.github.io/debasish/assets/images/project_images/publication_img.png",
     links: [
       {
         image: "https://onlinelibrary.wiley.com/pb-assets/journal-banners/25130390-1583487885883.jpg",
@@ -38,7 +38,7 @@ const PSCContent = [
     ),
     badge: "Data Selection And Analysis",
     image:
-      "/assets/images/project_images/psc_paper_arch.png",
+      "https://try-er.github.io/debasish/assets/images/project_images/psc_paper_arch.png",
     links: [
       {
         image: "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png",

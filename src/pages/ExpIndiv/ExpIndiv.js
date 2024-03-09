@@ -77,9 +77,9 @@ const ExpIndivComp = () => {
                             initial="initial"
                         >
                             <Link to="/" >
-                                <img src="/assets/icons/profile_logo.png" className="profile-logo" />
+                                <img src="https://try-er.github.io/debasish/assets/icons/profile_logo.png" className="profile-logo" />
                             </Link>
-                            <img src="/assets/icons/profile_logo.png" className="profile-logo-mob" onClick={() => { setShowMobile(!showMobile) }} />
+                            <img src="https://try-er.github.io/debasish/assets/icons/profile_logo.png" className="profile-logo-mob" onClick={() => { setShowMobile(!showMobile) }} />
                         </motion.h1>
                         <div className={`media-container ${showMobile ? "show" : ""}`}>
                             {Media.map((item, index) => {

@@ -14,7 +14,7 @@ const LCContent = [
     ),
     badge: "Intro",
     image:
-      "/assets/images/project_images/LC_50.jpg",
+      "https://try-er.github.io/debasish/assets/images/project_images/LC_50.jpg",
   },
   {
     title: "Development with of ML models",
@@ -50,7 +50,7 @@ const LCContent = [
     ),
     badge: "Deployment",
     image:
-      "/assets/images/project_images/predicted state.png",
+      "https://try-er.github.io/debasish/assets/images/project_images/predicted state.png",
   },
 ];
 

@@ -9,7 +9,7 @@ const LargeScaleAISteps = [
     ),
     badge: "Intro",
     image:
-      "/assets/images/experiment_images/dark_theme_state.png",
+      "https://try-er.github.io/debasish/assets/images/experiment_images/dark_theme_state.png",
   },
   {
     title: "Design Architecture",
@@ -20,7 +20,7 @@ const LargeScaleAISteps = [
     ),
     badge: "Development",
     image:
-      "/assets/images/experiment_images/architecture.png",
+      "https://try-er.github.io/debasish/assets/images/experiment_images/architecture.png",
   },
   {
     title: "Tools / Frameworks Used",

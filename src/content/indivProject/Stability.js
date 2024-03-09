@@ -26,10 +26,10 @@ const StabilityContent = [
     ),
     badge: "Intro",
     image:
-      "/assets/images/project_images/perovskite_main.jpg",
+      "https://try-er.github.io/debasish/assets/images/project_images/perovskite_main.jpg",
     links: [
       {
-        image: "/assets/images/exp_logos/CIPET.png",
+        image: "./assets/images/exp_logos/CIPET.png",
         url: "https://drive.google.com/file/d/1gujccK3Vqqj9qmm__d3ywOpngdUBGO8y/view",
         text: "Stability Assessment in Metal Halide Perovskite with Incorporation of Organic Additives",
       }

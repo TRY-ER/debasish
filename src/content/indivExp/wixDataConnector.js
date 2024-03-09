@@ -10,7 +10,7 @@ const WixConSteps = [
     ),
     badge: "Intro",
     image:
-      "/assets/images/experiment_images/wix-data.webp",
+      "https://try-er.github.io/debasish/assets/images/experiment_images/wix-data.webp",
   },
   {
     description: (
@@ -52,7 +52,7 @@ const WixConSteps = [
     badge: "Distribution",
     links: [
       {
-        image: "/assets/images/contact_logos/github_logo.webp",
+        image: "https://try-er.github.io/debasish/assets/images/contact_logos/github_logo.webp",
         url: "https://github.com/TRY-ER/wix_connector.git",
         text: "TRY-ER/wix_connector",
       }

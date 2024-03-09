@@ -13,7 +13,7 @@ const SikhyarthiContent = [
     ),
     badge: "About",
     image:
-      "/assets/images/project_images/sikharythi_page.png",
+      "https://try-er.github.io/debasish/assets/images/project_images/sikharythi_page.png",
   },
   {
     description: (

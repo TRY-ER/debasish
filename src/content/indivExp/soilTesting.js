@@ -10,7 +10,7 @@ const SoilTestSteps = [
     ),
     badge: "Intro",
     image:
-      "/assets/images/experiment_images/soil_testing.jpeg",
+      "https://try-er.github.io/debasish/assets/images/experiment_images/soil_testing.jpeg",
   },
   {
     title: "Two Staged Development",

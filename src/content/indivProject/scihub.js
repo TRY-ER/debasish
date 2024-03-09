@@ -13,7 +13,7 @@ const ScihubContent = [
     ),
     badge: "About",
     image:
-      "/assets/images/project_images/webautomation.jpg",
+      "https://try-er.github.io/debasish/assets/images/project_images/webautomation.jpg",
   },
   {
     description: (

@@ -10,7 +10,7 @@ const IntTTSSteps = [
     ),
     badge: "Intro",
     image:
-      "/assets/images/experiment_images/integrate_s2t.jpeg",
+      "https://try-er.github.io/debasish/assets/images/experiment_images/integrate_s2t.jpeg",
   },
   {
     title: "Using AI Community Platforms and Open Source AI Models",
@@ -71,7 +71,7 @@ const IntTTSSteps = [
         text: "byanzene/indic_trans_sample",
       },
       {
-        image: "/assets/images/contact_logos/github_logo.webp",
+        image: "https://try-er.github.io/debasish/assets/images/contact_logos/github_logo.webp",
         url: "https://github.com/TRY-ER/customTTS",
         text: "TRY-ER/customTTS",
       }

@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 
 
 // routes
-import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Routes, Route, HashRouter as Router } from 'react-router-dom';
 
 // components 
 import HomePage from './pages/Home/home';
@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <Router basename="/debasish/" >
+      <Router >
         <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/project-indiv/:project-id" element={<ProjectIndivComp/>} />
