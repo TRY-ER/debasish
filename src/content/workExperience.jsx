@@ -6,13 +6,13 @@ const expContent = [
         url: 'https://www.aicnalanda.com/',
         logo: "./assets/images/exp_logos/UU_LOGO.png"
     },
-    {
-        id: "AIC-NITF",
-        title: "AIC-NITF",
-        desc_text: "Working as Assistant Manager in Innovation Wing",
-        url: 'https://www.aicnalanda.com/',
-        logo: "./assets/images/exp_logos/AIC_NITF.png"
-    },
+    // {
+    //     id: "AIC-NITF",
+    //     title: "AIC-NITF",
+    //     desc_text: "Working as Assistant Manager in Innovation Wing",
+    //     url: 'https://www.aicnalanda.com/',
+    //     logo: "./assets/images/exp_logos/AIC_NITF.png"
+    // },
     { 
         id: "LARPM", 
         title: "SARP:LARPM", 
