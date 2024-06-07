@@ -12,13 +12,13 @@
     min-height: 100vh;
 }
 
-*::-webkit-scrollbar {
+/* *::-webkit-scrollbar {
     width: 0vw;
 }
 
 *::-webkit-scrollbar-track {
     background-color: transparent;
-}
+} */
 
 
 
@@ -80,14 +80,6 @@ circle {
         width: auto !important;
         align-items: start !important;
         transition: height 0.2s ease;
-    }
-
-    .indiv-media {
-        display: none;
-    }
-
-    .indiv-media.show {
-        display: flex;
     }
 
     .email-id {

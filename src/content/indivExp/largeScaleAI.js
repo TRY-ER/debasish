@@ -50,7 +50,7 @@ const LargeScaleAISteps = [
     links: [
       {
         image: "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png",
-        url: "https://github.com/TRY-ER/large_scale_question_answering_system.git",
+        url: "https://github.com/TRY-ER/Large-Scale-QnA-System-with-GenAI.git",
       }
     ]
   },

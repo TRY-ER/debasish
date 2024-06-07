@@ -1,0 +1,90 @@
+/* VARIABLES BECAUSE CSS PREPROCESSORS ARE COOL */
+
+
+@supports (display: grid) {
+    .grid-container {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+        grid-template-rows: auto 1fr auto !important;
+        /* Let the craziness begin!!! */
+        grid-template-areas: "main main main" !important;
+        width: 60vw;
+    }
+
+    @media screen and (max-width: 500px) {
+        .grid-container {
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.3fr 1fr auto 1fr;
+            grid-template-areas: "header" "title" "main" "footer";
+        }
+    }
+
+    .grid-item {
+        color: #fff;
+        background: transparent;
+        font-size: 1em;
+        font-weight: 700;
+    }
+
+    .hds-main {
+        color: #888;
+        background-color: transparent;
+        grid-area: main !important;
+        padding: 0;
+        overflow-x: scroll !important;
+        overflow-y: hidden !important;
+    }
+
+    .hds-main::-webkit-scrollbar {
+        width: 0vw;
+        height: 0vh;
+    }
+
+    .hds-main::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .hds-items {
+        position: relative !important;
+        width: 100%;
+        overflow-x: scroll !important;
+        overflow-y: hidden !important;
+        white-space: nowrap !important;
+        transition: all 0.2s;
+        will-change: transform;
+        user-select: none;
+        cursor: pointer;
+        padding: 10px 0;
+    }
+
+    .hds-items::-webkit-scrollbar {
+        height: 5px;
+        background-color: rgba(255, 255, 255, 0.262) !important;
+    }
+
+    .hds-items::-webkit-scrollbar-thumb {
+        background: white; 
+        border-radius: 6px;
+    }
+
+    .hds-items.active {
+        background: rgba(255, 255, 255, 0.3);
+        cursor: grabbing !important;
+        cursor: -webkit-grabbing !important;
+        transform: scale(1);
+    }
+
+    .hds-item {
+        display: inline-block !important;
+        background: transparent;
+        min-height: 250px !important;
+        min-width: 400px !important;
+    }
+
+    @media screen and (max-width: 500px) {
+        .hds-item {
+            min-height: 200px;
+            min-width: 200px;
+        }
+    }
+}

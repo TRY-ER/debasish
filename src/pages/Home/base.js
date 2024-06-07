@@ -5,6 +5,7 @@ import IntroSection from "../../components/Intro/Intro";
 import ProjectSection from "../../components/Projects/Projects";
 import ExperimentSection from "../../components/Experiments/Experiments";
 import ExperienceSection from "../../components/Experience/Experience.jsx";
+import MainTimeline from "../../components/MainTimeline/MainTimeline.jsx";
 
 import { Media } from "../../content/socialMedia.jsx";
 
@@ -107,10 +108,11 @@ const BaseHomeComp = () => {
                         </a>
                     </div>
                     <IntroSection />
-                    <ExperienceSection />
-                    <ExperimentSection />
-                    <ProjectSection />
-                    <ProjectOutro />
+                    <MainTimeline />
+                    {/* <ExperienceSection /> */}
+                    {/* <ExperimentSection /> */}
+                    {/* <ProjectSection /> */}
+                    {/* <ProjectOutro /> */}
                     <Footer />
                 </>
             </motion.div>

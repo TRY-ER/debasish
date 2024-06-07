@@ -11,12 +11,17 @@
     padding: 2vh 15vw;
 }
 
+
 *::-webkit-scrollbar {
-    width: 0vw;
+    width: 5px;
 }
 
 *::-webkit-scrollbar-track {
-    background-color: transparent;
+    background: var(--main-back-gradient);
+}
+
+*::-webkit-scrollbar-thumb{
+    background: rgba(255, 255, 255, 0.262);
 }
 
 
@@ -82,6 +87,10 @@ circle {
     stroke: white;
 }
 
+.indiv-media{
+    width: 30px;
+}
+
 
 @media (max-width: 700px) {
     .home-header-container {
@@ -95,6 +104,7 @@ circle {
 
     .indiv-media {
         display: none;
+        margin-bottom: 5px;
     }
 
     .indiv-media.show {
