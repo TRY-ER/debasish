@@ -125,11 +125,6 @@ const MainTimelineSteps = [
             title: "Tutorial",
             image: "https://forum.deepchem.io/uploads/default/original/1X/3217ffafdfcaab53ef04db5614e443498b38854d.png",
             url: "https://deepchem.io/tutorials/an-introduction-to-the-polymers-and-their-representation/",
-          },
-          {
-            title: "Latest PR",
-            image: "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png",
-            url: "https://github.com/deepchem/deepchem/pull/3930",
           }
         ]
       },
@@ -303,18 +298,13 @@ const MainTimelineSteps = [
         ]
       },
       {
-        title: "Web Deployment",
-        description: 'The frontend and backend are developed, that can be served in a server and be used by anyone through web.',
+        title: "Docker Deployment",
+        description: 'The deployment was done using docker-compose to integrate both frontend and backend',
         links: [
           {
-            title: "Frontend",
+            title: "Get Code",
             image: "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png",
-            url: "https://github.com/TRY-ER/perov_deployer_main.git",
-          },
-          {
-            title: "Backend",
-            image: "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png",
-            url: "https://github.com/TRY-ER/perov_deployer_backend.git",
+            url: "https://github.com/TRY-ER/perov_deployment",
           }
         ]
       },
