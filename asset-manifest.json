@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "https://try-er.github.io/debasish/static/css/main.d83d5631.css",
-    "main.js": "https://try-er.github.io/debasish/static/js/main.d7f2c635.js",
+    "main.js": "https://try-er.github.io/debasish/static/js/main.896e22cb.js",
     "static/js/927.6e57c135.chunk.js": "https://try-er.github.io/debasish/static/js/927.6e57c135.chunk.js",
     "static/js/453.56f46472.chunk.js": "https://try-er.github.io/debasish/static/js/453.56f46472.chunk.js",
     "static/media/logo.svg": "https://try-er.github.io/debasish/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "https://try-er.github.io/debasish/index.html",
     "main.d83d5631.css.map": "https://try-er.github.io/debasish/static/css/main.d83d5631.css.map",
-    "main.d7f2c635.js.map": "https://try-er.github.io/debasish/static/js/main.d7f2c635.js.map",
+    "main.896e22cb.js.map": "https://try-er.github.io/debasish/static/js/main.896e22cb.js.map",
     "927.6e57c135.chunk.js.map": "https://try-er.github.io/debasish/static/js/927.6e57c135.chunk.js.map",
     "453.56f46472.chunk.js.map": "https://try-er.github.io/debasish/static/js/453.56f46472.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d83d5631.css",
-    "static/js/main.d7f2c635.js"
+    "static/js/main.896e22cb.js"
   ]
 }
