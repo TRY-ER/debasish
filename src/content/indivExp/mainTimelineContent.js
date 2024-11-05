@@ -5,6 +5,26 @@ const MainTimelineSteps = [
   },
   {
     badge: "Organization",
+    title: "Deep Forest Sciences",
+    description: "Deep Forest Sciences specializes in developing toolkits for material discovery and related fields.",
+    c_img: "./assets/images/dfs.png",
+    o_detail: {
+      "Position": "Research Intern",
+      "Employment Type": "Contractual"
+    }
+  },
+  {
+    badge: "Organization",
+    title: "CIPET - SARP:LARPM",
+    description: "The School for Advanced Research in Petrochemicals (SARP) is a prestigious central government research institution focused on fostering advanced research in the fields of Materials and Polymer Science. As a PhD scholar there, my research focuses on Polymer Informatics, Materials Discovery, and Additive Manufacturing.",
+    c_img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC4jtAmMMExzGFtyuFC5oLvzBajv_KzZEvDA&s",
+    o_detail: {
+      "Position": "Junior Research Fellow (JRF)",
+      "Employment Type": "Full Time"
+    }
+  },
+  {
+    badge: "Organization",
     title: "Atal Incubation Center - NITF",
     description: "AIC-Nalanda Institute of Technology Foundation is a Technology Business Incubator supported by Atal Innovation Mission, a flagship initiative set up by the NITI Aayog, Government of India to promote innovation and entrepreneurship across the nation.",
     c_img: "https://www.aicnalanda.com/public/img/aicnewlogo.png",
