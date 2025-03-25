@@ -124,7 +124,7 @@ const PersContent = ({ elements }) => {
 
 export function TracingBeamTimeline({ content }) {
   const row_tags = ["Date", "Time", "Location", "Status", "time-range"]
-  const exp_tags = ["Organization", "Education", "Research Publication"]
+  const exp_tags = ["Organization", "Education", "Research Publication", "International Conference"]
   const [expanded, setExpanded] = React.useState([]);
   const elemVariant = {
     initial: {

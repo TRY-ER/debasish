@@ -28,7 +28,7 @@ const MainTimeline = () => {
     }
     return (<>
         <div className="timeline-container">
-            <h1>Learning Landscape</h1>
+            <h1>Timeline</h1>
             <TracingBeamTimeline content={content}/>
         </div>
     </>)
