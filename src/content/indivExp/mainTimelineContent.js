@@ -304,7 +304,7 @@ const MainTimelineSteps = [
     badge: "Organization",
     title: "iNeuron",
     description: "INeuron is a leading edtech company with primary focus on providing education on emerging technologies while making tech education easily accessible, practical and affordable.",
-    c_img: "https://yt3.googleusercontent.com/z3bL64ZS4SUH6joo5UCc7zRcY9mWJY04dgEVZmiqVZdlqG4cuDcXvWqB1h-8JGEiLuhwMg5NQ0k=s900-c-k-c0x00ffffff-no-rj",
+    c_img: "./assets/images/ineuron.png",
     o_detail: {
       "Position": "Intern",
       "Employment Type": "Remote"
@@ -598,7 +598,7 @@ const MainTimelineSteps = [
     badge: "Organization",
     title: "iNeuron",
     description: "Enrolled in Data Science Masters program by iNeuron.",
-    c_img: "https://yt3.googleusercontent.com/z3bL64ZS4SUH6joo5UCc7zRcY9mWJY04dgEVZmiqVZdlqG4cuDcXvWqB1h-8JGEiLuhwMg5NQ0k=s900-c-k-c0x00ffffff-no-rj",
+    c_img: "./assets/images/ineuron.png",
     o_detail: {
       "Position": "Student",
       "Location": "Remote"
