@@ -1,7 +1,36 @@
 const MainTimelineSteps = [
   {
     type: "time-range",
-    time_text: "2024   →  Present"
+    time_text: "2025   →  Present"
+  },
+  {
+    badge: "International Conference",
+    title: "APM-2025 16th INTERNATIONAL CONFERENCE On ADVANCEMENT IN PETROCHEMICAL SECTOR & EMPOWERING SUSTAINABLE DEVELOPMENT LEADING TO “VIKSIT BHARAT” ",
+    description: "We presented our study on aligning polymer representations within neural networks, aimed at generating potential biomedical polymers.",
+    c_img: "https://www.cipetapm2025.com/assets/images/logo.png",
+    o_detail: {
+      "Presented on": "10th March, 2025"
+    }
+  },
+  {
+    badge: "International Conference",
+    title: "The 39th Annual AAAI Conference on Artificial Intelligence",
+    description: "In collaboration with Deep Forest Sciences and CIPET: SARP - LARPM, we presented a poster on our polymer generation algorithms at the AAAI-25 Annual Conference.",
+    c_img: "https://aaai.org/wp-content/uploads/2024/03/AAAI-Logo-Title-White.png",
+    o_detail: {
+      "Workshop": "4th Annual AAAI Workshop on AI to Accelerate Science and Engineering (AI2ASE)",
+      "Presented on": "3rd March, 2025"
+    }
+  },
+  {
+    badge: "Source",
+    show_links: [
+      {
+        text: "Know More",
+        image: "https://aaai.org/wp-content/uploads/2023/11/AAAI-25_Mark-Inverse.png",
+        url: "https://ai-2-ase.github.io/",
+      }
+    ]
   },
   {
     badge: "Organization",
@@ -12,6 +41,84 @@ const MainTimelineSteps = [
       "Position": "Research Intern",
       "Employment Type": "Contractual"
     }
+  },
+  {
+    badge: "Organization",
+    title: "CIPET - SARP:LARPM",
+    description: "The School for Advanced Research in Petrochemicals (SARP) is a prestigious central government research institution focused on fostering advanced research in the fields of Materials and Polymer Science. As a PhD scholar there, my research focuses on Polymer Informatics, Materials Discovery, and Additive Manufacturing.",
+    c_img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC4jtAmMMExzGFtyuFC5oLvzBajv_KzZEvDA&s",
+    o_detail: {
+      "Position": "Junior Research Fellow (JRF)",
+      "Employment Type": "Full Time"
+    }
+  },
+  {
+    badge: "Organization",
+    title: "Atal Incubation Center - NITF",
+    description: "AIC-Nalanda Institute of Technology Foundation is a Technology Business Incubator supported by Atal Innovation Mission, a flagship initiative set up by the NITI Aayog, Government of India to promote innovation and entrepreneurship across the nation.",
+    c_img: "https://www.aicnalanda.com/public/img/aicnewlogo.png",
+    o_detail: {
+      "Position": "Innovation Consultant",
+      "Employment Type": "Consultancy"
+    }
+  },
+  {
+    badge: "Organization",
+    title: "Deepchem",
+    description: "The DeepChem project aims to make high quality open source software for scientific machine learning more accessible to scientists and developers worldwide. It has a particular focus on molecular machine learning and drug discovery, but also supports a broad range of applications in bioinformatics, materials science, and computational physics.",
+    c_img: "./assets/images/deepchem.png",
+    o_detail: {
+      "Position": "Core Code Contributor",
+      "Employment Type": "Open-Source"
+    }
+  },
+  {
+    badge: "Education",
+    title: "PhD in Polymer Science",
+    description: "I am currently pursuing a PhD in Polymer Science at Utkal University, under the supervision of CIPET-IPT. My research focuses on developing, implementing, and validating computational algorithms for polymer generation.",
+    c_img: "https://rcm.ac.in/wp-content/uploads/2023/06/Utkal-University-1.png",
+    o_detail: {
+      "Institute": "Utkal University",
+      "Branch": "Polymer Science",
+      "Degree": "PhD"
+    }
+  },
+  {
+    break: "1"
+  },
+  {
+    type: "time-range",
+    time_text: "2024   →  2025"
+  },
+  {
+    badge: "Organization",
+    title: "Deep Forest Sciences",
+    description: "Deep Forest Sciences specializes in developing toolkits for material discovery and related fields.",
+    c_img: "./assets/images/dfs.png",
+    o_detail: {
+      "Position": "Research Intern",
+      "Employment Type": "Contractual"
+    }
+  },
+  {
+    badge: "Research Publication",
+    title: "Open-source Polymer Generative Pipeline",
+    description: "This research paper presents an open-source computational pipeline for generating hypothetical polymers with targeted properties, such as ionization potential, using neural networks and integrating it into the DeepChem framework for enhanced accessibility.",
+    c_img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/ArXiv_logo_2022.svg/2560px-ArXiv_logo_2022.svg.png",
+    o_detail: {
+      "Publisher": "ArXiv",
+      "Published on": "29th November, 2024"
+    }
+  },
+  {
+    badge: "Source",
+    show_links: [
+      {
+        text: "Read Here",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/ArXiv_logo_2022.svg/2560px-ArXiv_logo_2022.svg.png",
+        url: "https://arxiv.org/html/2412.08658v1",
+      }
+    ]
   },
   {
     badge: "Organization",
