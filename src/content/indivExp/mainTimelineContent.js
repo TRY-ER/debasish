@@ -4,6 +4,16 @@ const MainTimelineSteps = [
     time_text: "2025   →  Present"
   },
   {
+    badge: "Organization",
+    title: "MDAnalysis",
+    description: "The MDAnalysis Project develops open-source tools for the analysis of molecular simulation data, providing researchers with efficient and accessible solutions for studying molecular structures and dynamics.",
+    c_img: "./assets/images/mda.png",
+    o_detail: {
+      "Position": "Code Contributor",
+      "Employment Type": "Open-Source"
+    }
+  },
+  {
     badge: "International Conference",
     title: "APM-2025 16th INTERNATIONAL CONFERENCE On ADVANCEMENT IN PETROCHEMICAL SECTOR & EMPOWERING SUSTAINABLE DEVELOPMENT LEADING TO “VIKSIT BHARAT” ",
     description: "We presented our study on aligning polymer representations within neural networks, aimed at generating potential biomedical polymers.",
