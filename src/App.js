@@ -14,7 +14,7 @@ import ProjectIndivComp from './pages/ProjectIndiv/ProjectIndiv';
 import ExpIndivComp from './pages/ExpIndiv/ExpIndiv';
 import LoadingScreen from './components/LoadingScreen/Loading';
 import Test from './pages/test/Test';
-
+import TestPage from './pages/test/TestPage'; // Import the new TestPage component
 
 function App() {
   
@@ -26,6 +26,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/project-indiv/:project-id" element={<ProjectIndivComp/>} />
             <Route path="/exp-indiv/:exp-id" element={<ExpIndivComp />} />
+            <Route path="/test" element={<TestPage />} /> {/* Add the new route for TestPage */}
         </Routes>
       </Router>
     </div>
