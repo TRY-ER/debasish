@@ -5,12 +5,13 @@
     display: flex;
     flex-direction: column;
     background-image: var(--main-back-gradient);
+    background-attachment: fixed;
     color: white;
     font-family: var(--primary-font);
     /* overflow-x: hidden; */
-    padding: 2vh 15vw;
+    padding: 0 15vw;
+    min-height: 100vh;
 }
-
 
 *::-webkit-scrollbar {
     width: 5px;
@@ -20,48 +21,8 @@
     background: var(--main-back-gradient);
 }
 
-*::-webkit-scrollbar-thumb{
+*::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.262);
-}
-
-
-
-.home-header-container {
-    position: fixed;
-    z-index: 100;
-    display: flex;
-    flex-direction: row;
-    width: 70vw;
-    height: 10vh;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.2rem;
-    overflow: hidden;
-    backdrop-filter: blur(20px);
-    padding: 20px;
-    border-radius: 20px;
-    transition: height 0.2s ease;
-}
-
-.media-container {
-    display: flex;
-    flex-direction: row;
-    width: 30%;
-    justify-content: space-around;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-    z-index: 200;
-}
-
-
-
-.profile-logo {
-    width: 2.5vw;
-}
-
-.profile-logo-mob {
-    display: none;
 }
 
 #progress {
@@ -87,58 +48,7 @@ circle {
     stroke: white;
 }
 
-.indiv-media{
-    width: 30px;
-}
-
-
 @media (max-width: 700px) {
-    .home-header-container {
-        flex-direction: column !important;
-        height: auto !important;
-        max-width: 90vw;
-        width: auto !important;
-        align-items: start !important;
-        transition: height 0.2s ease;
-    }
-
-    .indiv-media {
-        display: none;
-        margin-bottom: 5px;
-    }
-
-    .indiv-media.show {
-        display: flex;
-    }
-
-    .email-id {
-        display: none;
-    }
-
-    .email-id.show {
-        display: flex;
-    }
-
-    .media-container.show {
-        margin-top: 10px;
-        flex-direction: column !important;
-        width: auto !important;
-        align-items: start;
-    }
-
-    .profile-logo-mob {
-        display: flex !important;
-        width: 40px !important;
-    }
-
-    .profile-logo {
-        display: none;
-    }
-
-    .email-id {
-        margin-top: 10px;
-    }
-
     #progress .indicator {
         stroke: white;
         opacity: 0.3;
